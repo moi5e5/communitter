@@ -1,0 +1,35 @@
+propel:
+  _attributes:
+    package: lib.model
+    
+  sf_guard_user_profile:
+    _attributes: { idMethod: native, phpName: sfGuardUserProfile }    
+    sf_guard_user_profile_id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }    
+    community_types_id: { type: INTEGER, required: true, foreignTable: community_types, foreignReference: community_types_id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    user_id: { type: INTEGER, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    name: { type: VARCHAR, size: '250', required: true }
+    lastname: { type: VARCHAR, size: '250', required: true}
+    lastname2: { type: VARCHAR, size: '250', required: true}
+    email: { type: VARCHAR, size: '100', required: true, default: unknown }
+    twitteruser: { type: VARCHAR, size: '255', required: true }
+    homepage: { type: VARCHAR, size: '255', required: true }
+       
+  community_types:
+    _attributes: { idMethod: native, phpName: CommunityTypes }
+    community_types_id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }
+    name: { type: VARCHAR, size: '255', requiered: true }
+    is_default: { type: BOOLEAN, requiered: true, default: '0' }
+    
+  community_items:
+    _attributes: { idMethod: native, phpName: CommunityItems }
+    community_items_id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }
+    user_id: { type: INTEGER, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    name: { type: VARCHAR, size: '255', requiered: true }
+    brief: { type: VARCHAR, size: '255', requiered: true }
+    tags: { type: VARCHAR, size: '255', requiered: true }
+    content: { type: LONGVARCHAR, required: true }    
+    filename: { type: VARCHAR, size: '255', requiered: true }    
+    likes: { type: INTEGER, requiered: true, default: '0' }    
+    is_default: { type: BOOLEAN, requiered: true, default: '0' }    
+    updated_at: { type: DATE }
+    created_at: { type: DATE }

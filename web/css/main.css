@@ -1,0 +1,142 @@
+BODY
+{
+    background-color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;    
+}
+
+#wrapper
+{
+    top:0;
+    position: absolute;
+    padding: 0px;
+    left: 50%;
+    margin-left: -455px;
+    width: 909px;
+    background-color: #FFFFFF;
+    font-size:1.3em;
+
+}
+
+#home
+{
+    width: 909px;
+    height: 236px;
+    background-image: url(../images/cs_header.png);
+}
+
+#home H2
+{
+    display:none;
+}
+
+#home #menu
+{
+    width: 250px;
+    float: right;
+    margin-top: 50px;
+}
+
+#home #menu UL LI
+{
+    list-style: none;
+}
+
+
+#wrapper #intro
+{
+    color: #666666;
+    margin:20px;
+}
+
+#wrapper #members, #wrapper #items
+{
+    float: left;
+    margin-left:20px;
+    width: 420px;
+
+}
+
+#footer
+{
+    clear:both;
+}
+
+#wrapper #members .container, #wrapper #items .container
+{
+
+    border:solid 1px #F0F0F0;
+    border:none;
+    outline:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #666666;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#D2D2D2;
+
+}
+
+#wrapper #members H3
+{
+    background-image: url(../images/nuevossymfoneros.png);
+    width:219px;
+    height: 44px;
+}
+
+#wrapper #items H3
+{
+    background-image: url(../images/ultimassymfonias.png);
+    width:181px;
+    height: 44px;
+}
+
+#wrapper #members H3 SPAN
+{
+    display:none;
+}
+
+#wrapper #items H3 SPAN
+{
+    display:none;
+}
+
+
+#memberslist
+{
+    list-style: none;
+    margin-left: -30px;
+}
+
+#memberslist LI
+{
+   height: 61px;
+   
+
+}
+
+#memberslist LI SPAN
+{
+   position:relative;
+   top:15px;
+
+}
+
+
+.picture_profile
+{
+    float:left;
+    margin-right:15px;
+}
+
+
+.symfonero
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #492F14
+
+
+}

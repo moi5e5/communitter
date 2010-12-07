@@ -1,0 +1,12 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+   sf_guard_extra_plugin:
+     mail_from:        moises.rangel@gmail.com
+     name_from:        noreply
+     subject_confirm:  Confirm Registration
+     subject_complete: Request complete
+     subject_request:  Request to reset password
+     subject_success:  Password reset successfully    
